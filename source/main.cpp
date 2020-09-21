@@ -2,6 +2,9 @@
 #include "cache.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    test_pages();
+    test_mem();
+    //test_cache();
     return 0;
 }
