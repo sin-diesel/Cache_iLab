@@ -1,10 +1,10 @@
 #include <iostream>
-#include "cache.h"
+#include "cache.hpp"
 
 int main() {
 
     test_pages();
     test_mem();
-    //test_cache();
+    test_cache();
     return 0;
 }
