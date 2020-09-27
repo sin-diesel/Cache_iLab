@@ -2,23 +2,6 @@
 
 typedef int data_type;
 
-//template<>
-//void cache_mem_t<data_type>::print_mem() const {
-//
-//    std::cerr << "Printing memory: " << std::endl;
-//    for (auto const& i: list_) {
-//        i.print_page();
-//    }
-//
-//}
-//
-//template<>
-//void cache_t<data_type>::add_page(cache_mem_t<data_type> mem, page_t<data_type> const page) {
-//
-//    mem.list_.push_front(page);
-//    mem.list_.pop_back();
-//}
-
 
 void test_pages() {
 
@@ -31,15 +14,28 @@ void test_pages() {
 
 }
 
-//void test_mem() {
-//
-//    cache_mem_t<data_type> memory(5);
-//
-//    memory.print_mem();
-//
-//}
-//
-//void test_cache() {
-//
-//    cache_t<data_type> cache(5);
-//}
+void test_mem() { // is it a good implementation of manual tests?
+
+
+    int mem_size = 4;
+    cache_mem_t<data_type> memory(mem_size);
+
+    memory.print_mem();
+
+    page_t<data_type> pages[] = {page_t<data_type>(0, 4), page_t<data_type>(1, 2), page_t<data_type>(2, 7), page_t<data_type>(3, 20), page_t<data_type>(4, 18)};
+
+    memory.add_page(pages[0]);
+    memory.add_page(pages[1]);
+    memory.add_page(pages[2]);
+
+    memory.print_mem();
+
+    assert(memory.beginning_->id_ == 2);
+    assert(memory.beginning_->data_ == 7);
+    assert(memory.mem_size_ == mem_size);
+}
+
+void test_cache() {
+
+    cache_t<data_type> cache(5);
+}

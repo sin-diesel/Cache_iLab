@@ -41,62 +41,81 @@ struct page_t {
     }
 };
 
-//template<typename data_t>
-//struct cache_mem_t {
-//
-//    std::list<page_t<data_t>> list_;
-//    unsigned mem_size_; // total size of cache buffer
-//    page_t<data_t>* beginning_;
-//    page_t<data_t>* end_;
-//
-//    cache_mem_t() {
-//        mem_size_ = 1;
-//        list_.insert(page_t<data_t>()); // creating single page by default
-//        beginning_ = &list_.front();
-//        end_ = &list_.back();
-//    }
-//
-//    cache_mem_t(unsigned size) {
-//        mem_size_ = size;
-//
-//        for (int i = 0; i < size; ++i) {
-//            list_.insert(page_t<data_t>());
-//        }
-//
-//        beginning_ = &list_.front();
-//        end_ = &list_.back();
-//    }
-//
-//    void print_mem() const;
-//
-//    void memOK() const;
-//};
+template<typename data_t>
+struct cache_mem_t {
+
+    std::list<page_t<data_t>> list_;
+    unsigned mem_size_ = 0; // total size of cache buffer
+    page_t<data_t> *beginning_ = NULL;
+    page_t<data_t> *end_ = NULL;
+
+    cache_mem_t() {
+        mem_size_ = 1;
+        list_.push_back(page_t<data_t>()); // creating single page by default
+        beginning_ = &list_.front();
+        end_ = &list_.back();
+    }
+
+    cache_mem_t(unsigned size) {
+        mem_size_ = size;
+
+        for (int i = 0; i < size; ++i) {
+            list_.push_back(page_t<data_t>());
+        }
+
+        beginning_ = &list_.front();
+        end_ = &list_.back();
+    }
+
+    void print_mem() const {
+        std::cerr << "Printing memory: " << std::endl;
+        for (auto const &i: list_) {
+            i.print_page();
+        }
+    }
+
+    void add_page(page_t<data_t> const page) {
+
+        list_.push_front(page);
+        beginning_ = &list_.front();
+        list_.pop_back();
+        end_ = &list_.back();
+
+    }
+
+    bool memOK() {
+        if (mem_size_ < 0) {
+            return false;
+        }
+
+        return true;
+    }
+};
+
+template<typename data_t>
+struct cache_t {
+
+    cache_mem_t<data_t> main_mem;
+
+    unsigned buffer_size_ = 0;
+    unsigned main_size_ = 0;
+
+
+    cache_t() {
+        buffer_size_ = main_mem.mem_size_;
+        main_size_ = main_mem.mem_size_;
+    }
+
+    cache_t(unsigned buffer_size) {
+        buffer_size_ = buffer_size;
+        main_size_ = K1 * buffer_size;
+
+        main_mem = cache_mem_t<data_t>(main_size_);
+    }
+};
 
 void test_pages();
 
 void test_mem();
 
 void test_cache();
-
-//template<typename data_t>
-//struct cache_t {
-//
-//    cache_mem_t<data_t> main_mem;
-//
-//    unsigned _buffer_size;
-//    unsigned _main_size;
-//
-//    void add_page(cache_mem_t<data_t> mem, const page_t<data_t> page);
-//
-//    cache_t() {
-//        _buffer_size = main_mem._mem_size;
-//        _main_size = main_mem._mem_size;
-//    }
-//
-//    cache_t(unsigned buffer_size) {
-//        _buffer_size = buffer_size;
-//        _main_size = K1 * buffer_size;
-//
-//        main_mem = cache_mem_t<data_t>(_main_size);
-//    }
-//};
