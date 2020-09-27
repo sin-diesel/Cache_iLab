@@ -31,7 +31,6 @@ struct page_t {
     }
 
     bool pageOK() const {
-
         if (size_ < 0) {
             std::cerr << "Page with invalid size: " << std::endl;
             print_page();
