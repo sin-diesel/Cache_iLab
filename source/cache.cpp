@@ -3,7 +3,7 @@
 typedef int data_type;
 
 
-void test_pages() {
+void test_pages() { // a good way to test?
 
     page_t<data_type> pages[] = {page_t<data_type>(0, 4), page_t<data_type>(1, 2), page_t<data_type>(2, 7), page_t<data_type>(3, 20), page_t<data_type>(4, 18)};
 
@@ -44,7 +44,7 @@ void test_mem() { // is it a good implementation of manual tests?
     assert(memory.cur_size_ == 3);
 }
 
-void test_cache() {
+void test_cache() { // same question
 
     cache_t<data_type> cache(5);
 
@@ -109,7 +109,7 @@ void test_cache() {
 
     //two_q_cache.print_cache();
 
-    std::cerr << "Now generating data for cache and printing it: \n";
+    //std::cerr << "Now generating data for cache and printing it: \n";
 
     tests_t<int> tests(40);
     //tests.print_test_data();
@@ -117,7 +117,7 @@ void test_cache() {
     cache_t<int> cache_2(20, 1, 0);
     //cache_2.print_cache();
 
-    std::cerr << "After filling with data: \n";
+    //std::cerr << "After filling with data: \n";
     tests.fill_cache(cache_2);
 
     //cache_2.print_cache();

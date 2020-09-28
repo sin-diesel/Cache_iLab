@@ -48,7 +48,7 @@ struct page_t {
 };
 
 template<typename data_t>
-struct cache_mem_t {
+struct cache_mem_t { // cache mem structure for easier interpretation of main_mem and secondary_mem in 2q algorithm
 
     std::list<page_t<data_t>> list_;
     std::unordered_map<int, page_t<data_t>*> hash_table;
@@ -103,13 +103,13 @@ struct cache_mem_t {
     void remove_page(page_t<data_t> page) {
 
         hash_table.erase(page.id_);
-        list_.remove(page);
+        list_.remove(page);  // actually I do not want to remove page completely, I want to leave the space that it was occupying (buffer has fixed sized and we do not want to change it)
         list_.push_back(page_t<data_t>());
         cur_size_ -= 1;
     }
 
     bool page_at(int id) const {
-        try {
+        try { // can be done better?
             hash_table.at(id);
         } catch(std::out_of_range) {
             return false;
@@ -236,7 +236,7 @@ struct tests_t {
         srand(time(NULL));
 
         for (int i = 0; i < num_of_pages_; ++i) {
-            pages.push_back(page_t<data_t>(rand() % 100, rand() % 100)); // generating random data in page with random id
+            pages.push_back(page_t<data_t>(rand() % 100, rand() % 100)); // generating random data in page with random id, need some ideas for interesting tests
         }
     }
 
