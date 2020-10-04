@@ -4,9 +4,9 @@
 
 int main() {
 
-    //test_pages();
-    //test_mem();
-    //test_cache();
+    test_pages();
+    test_mem();
+    test_cache();
 
     int buffer_size = 10;
 
