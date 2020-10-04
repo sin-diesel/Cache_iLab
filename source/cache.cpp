@@ -1,3 +1,4 @@
+#include <assert.h>
 #include "cache.hpp"
 
 typedef int data_type;
