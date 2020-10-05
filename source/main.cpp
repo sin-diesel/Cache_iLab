@@ -2,7 +2,7 @@
 #include "cache.hpp"
 
 
-int main() {
+int main(int argc, char* argv[]) {
 
     test_pages();
     test_mem();
@@ -10,14 +10,10 @@ int main() {
 
     int buffer_size = 10;
 
-    cache_t<int> two_q_cache(buffer_size, 0.3, 0.25); // coefficients for splitting memory
+    cache_t<int> two_q_cache(buffer_size); 
 
-    tests_t<int> tests(1000);
-
-    //tests.fill_cache(two_q_cache);
-
-    two_q_cache.print_cache();
-
+    tests_t<int> tests(50);
+    
     tests.test_cache(two_q_cache);
 
 

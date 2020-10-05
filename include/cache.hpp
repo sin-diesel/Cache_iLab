@@ -3,33 +3,30 @@
 #include <list>
 #include <iostream>
 #include <vector>
+#include <assert.h>
 
-#define K1 0.5
-#define K2 0.5
+#define DEBUG true
 
-//typedef int data_type;
+#define DUB(a) if (DEBUG) {a}  
+
+#define Kin 0.25
+#define Kout 0.5
 
 template<typename data_t>
 struct page_t {
 
     int id_ = 0; // page id
     unsigned size_ = 0; // page size
-    data_t data_ = NULL; // data
+    data_t data_ = 0; // data
 
     bool operator == (const page_t& page) const {
         return id_ == page.id_;
     }
 
-    page_t(int id, data_t data) {
-        id_ = id;
-        size_ = sizeof(data);
-        data_ = data;
-    }
-
-    page_t() { // default constructor worse then in - class initialization?
-        id_ = 0;
-        size_ = 0;
-        data_ = NULL;
+    page_t(int id = 0, data_t data = 0): id_(id), size_(sizeof(data)), data_(data) {
+        if (data == 0) {
+            size_ = 0;
+        }
     }
 
     void print_page() const { // is it ok to write function definition in class, even for .hpp file?
@@ -47,24 +44,22 @@ struct page_t {
     }
 };
 
-template<typename data_t>
-struct cache_mem_t { // cache mem structure for easier interpretation of main_mem and secondary_mem in 2q algorithm
+template<typename elem_t>
+struct cache_mem_t { // cache mem structure for easier interpretation of am and secondary_mem in 2q algorithm
 
-    std::list<page_t<data_t>> list_;
-    std::unordered_map<int, page_t<data_t>*> hash_table;
+    std::list<elem_t> list_;
+    std::unordered_map<int, elem_t*> hash_table;
 
-    unsigned mem_size_ = 0; // total size of cache buffer
-    unsigned cur_size_ = 0;
-    page_t<data_t> *beginning_ = NULL;
-    page_t<data_t> *end_ = NULL;
-
+    unsigned mem_size_; // total size of cache buffer
+    unsigned cur_size_;
+    elem_t* beginning_;
+    elem_t* end_;
 
     cache_mem_t() {
-        mem_size_ = 1;
-        cur_size_ = 1;
-        list_.push_back(page_t<data_t>()); // creating single page by default
-        beginning_ = &list_.front();
-        end_ = &list_.back();
+        mem_size_ = 0;
+        cur_size_ = 0;
+        beginning_ = NULL;
+        end_ = NULL;
     }
 
     cache_mem_t(unsigned size) {
@@ -72,7 +67,7 @@ struct cache_mem_t { // cache mem structure for easier interpretation of main_me
         cur_size_ = 0;
 
         for (int i = 0; i < size; ++i) {
-            list_.push_back(page_t<data_t>());
+            list_.push_back(elem_t());
         }
 
         beginning_ = &list_.front();
@@ -80,38 +75,38 @@ struct cache_mem_t { // cache mem structure for easier interpretation of main_me
     }
 
     void print_mem() const {
-        std::cerr << "Printing memory: " << std::endl;
-        for (auto const &i: list_) {
-            i.print_page();
+        std::cerr << "Printing memory: " << this << std::endl;
+        std::cerr << "Memory size: " << mem_size_ << std::endl;
+        for (auto v : list_) {
+            v.print_page();
         }
     }
 
-    void add_page(page_t<data_t> page) {
+    void add_page(elem_t page) {
 
         list_.push_front(page);
         hash_table.insert({page.id_, &page});
         beginning_ = &list_.front();
         cur_size_ += 1;
 
-        page_t<data_t>* deleted = &list_.back();
+        elem_t* deleted = &list_.back();
         hash_table.erase(deleted->id_);
         list_.pop_back();
         end_ = &list_.back();
 
     }
 
-    void remove_page(page_t<data_t> page) {
-
+    void remove_page(elem_t page) {
         hash_table.erase(page.id_);
         list_.remove(page);  // actually I do not want to remove page completely, I want to leave the space that it was occupying (buffer has fixed sized and we do not want to change it)
-        list_.push_back(page_t<data_t>());
+        list_.push_back(elem_t());
         cur_size_ -= 1;
     }
 
     bool page_at(int id) const {
         try { // can be done better?
             hash_table.at(id);
-        } catch(std::out_of_range) {
+        } catch(std::out_of_range) { // how to do?
             return false;
         }
         return true;
@@ -121,104 +116,83 @@ struct cache_mem_t { // cache mem structure for easier interpretation of main_me
         if (mem_size_ < 0) {
             return false;
         }
-
         return true;
     }
 };
 
 template<typename data_t>
 struct cache_t {
+    
+    cache_mem_t<page_t<data_t>> am; // main buffer Am
+    cache_mem_t<page_t<data_t>> a1; // secondary memory which Ain
+    cache_mem_t<page_t<data_t>> aout; // memory to hold only references to pages Aout (handle pointer later, for now storing simply pages)
 
-    cache_mem_t<data_t> main_mem;
-    cache_mem_t<data_t> a1_mem;
-    cache_mem_t<data_t> aout_mem;
-
-    unsigned buffer_size_ = 0;
-    unsigned main_size_ = 0;
-    unsigned a1_size = 0;
-    unsigned aout_size = 0;
+    cache_t() = delete; // can not delete :(
 
 
-    cache_t() {
-        buffer_size_ = main_mem.mem_size_;
-        main_size_ = main_mem.mem_size_;
-        a1_mem = a1_mem.mem_size_;
-        aout_mem = aout_mem->mem_size_;
-    }
+    cache_t(unsigned n_pages): am(), a1(), aout() {
+        unsigned aout_size = Kout * n_pages * (sizeof(page_t<data_t>) / sizeof(page_t<data_t>*));
+        unsigned a1_size = Kin * (n_pages - aout_size);
+        unsigned am_size = n_pages - aout_size - a1_size;
 
-    cache_t(unsigned buffer_size) {
-
-        assert(buffer_size > 0);
-        buffer_size_ = buffer_size;
-        main_size_ = buffer_size;
-        a1_size = buffer_size;
-        aout_size = buffer_size;
-
-        main_mem = cache_mem_t<data_t>(main_size_);
-        a1_mem = cache_mem_t<data_t>(a1_size);
-        aout_mem = cache_mem_t<data_t>(aout_size);
-    }
-
-    cache_t(unsigned buffer_size, float am, float a1) {
-
-        assert(buffer_size > 0);
-        buffer_size_ = buffer_size;
-        main_size_ = am * buffer_size;
-        a1_size = buffer_size_ * a1;
-        aout_size = buffer_size_ - main_size_ - a1_size;
-
-        assert(main_size_ >= 0);
-        assert(a1_size >= 0);
-        assert(aout_size >= 0);
-
-        main_mem = cache_mem_t<data_t>(main_size_);
-        a1_mem = cache_mem_t<data_t>(a1_size);
-        aout_mem = cache_mem_t<data_t>(aout_size);
+        am = cache_mem_t<page_t<data_t>>(am_size);
+        a1 = cache_mem_t<page_t<data_t>>(a1_size);
+        aout = cache_mem_t<page_t<data_t>>(aout_size);
     }
 
     void print_cache() const {
         std::cerr << "\n\n\n";
-        std::cerr << "Printing 2q cache: " << std::endl;
-        std::cerr << "buffer size: " << buffer_size_ << std::endl;
-        std::cerr << "main size: " << main_size_ << std::endl;
-        std::cerr << "a1 size: " << a1_size << std::endl;
-        std:: cerr << "aout size: " << aout_size << std::endl;
-        std::cerr << "\tprinting main memory: " << std::endl;
-        main_mem.print_mem();
+        std::cerr << "Printing 2q cache at: " << this << std::endl;
+        std::cerr << "\tprinting am memory: " << std::endl;
+        am.print_mem();
         std::cerr << "\t printing a1 memory: " << std::endl;
-        a1_mem.print_mem();
+        a1.print_mem();
         std::cerr << "\t printing aout memory: " << std::endl;
-        aout_mem.print_mem();
+        aout.print_mem();
+        std::cerr << "Cache " << this << " printed.";
         std::cerr << "\n\n\n";
     }
+    
+    void reclaimfor(page_t<data_t> const page) {
+        if (am.cur_size_ < am.mem_size_) {
+            am.add_page(page);
+        } else if (a1.cur_size_ < a1.mem_size_) {
+            a1.add_page(page);
+        } else if (a1.cur_size_ == a1.mem_size_) {
 
-    int handle_page(page_t<data_t> page) { // main algorithm
+            page_t<data_t> tail = a1.list_.back();
+            aout.add_page(tail); // do not use list
+            a1.remove_page(tail);
 
-        if (main_mem.page_at(page.id_)) { // if page is in Am queue, move page to the head
-            main_mem.remove_page(page);
-            main_mem.add_page(page);
+            if (aout.cur_size_ == aout.mem_size_) {
+                page_t<data_t> tail = aout.list_.back();
+                aout.remove_page(tail);
+            }
+            a1.add_page(page); 
+        } else {
+            page_t<data_t> tail = am.list_.back();
+            am.remove_page(tail);
+            am.add_page(page);
+        }
+    }
+
+    int handle_page(page_t<data_t> const page) { // main algorithm
+
+        if (am.page_at(page.id_)) { // if page is in Am queue, move page to the head
+            am.remove_page(page); // add swap method later, use pointers to page instead
+            am.add_page(page);
             return 1; // hit
-        } else if (aout_mem.page_at(page.id_)) {
-            aout_mem.remove_page(page);
-            main_mem.add_page(page);
+        } else if (aout.page_at(page.id_)) {
+            reclaimfor(page); // deciding where to put the page
             return 0; // miss
-        } else if (a1_mem.page_at(page.id_)) {
-            a1_mem.remove_page(page); // moving to the head
-            a1_mem.add_page(page);
+        } else if (a1.page_at(page.id_)) {
             return 1; // hit
         } else { // page is in no queue
-            if (a1_mem.cur_size_ < a1_mem.mem_size_) {
-                a1_mem.add_page(page);
-            } else {
-                aout_mem.add_page(a1_mem.list_.back());
-                a1_mem.add_page(page);
-            }
+            reclaimfor(page);
             return 0; // miss
         }
 
     }
-
-
 
 };
 
@@ -251,22 +225,19 @@ struct tests_t {
     }
 
     void fill_cache(cache_t<data_t>& cache) const {
-
         for (int i = 0; i < num_of_pages_; ++i) {
-            cache.main_mem.add_page(pages[i]);
+            cache.am.add_page(pages[i]);
         }
     }
 
     void test_cache(cache_t<data_t>& cache) const {
-
         int hits = 0;
-
         for (int i = 0; i < num_of_pages_; ++i) {
             std::cerr << "Accessing page with id: " << pages[i].id_ << "\n";
             hits += cache.handle_page(pages[i]);
-            //cache.print_cache();
+            cache.print_cache();
         }
-        std::cout << "Hits: " << hits << std::endl;
+        std::cerr << "Hits: " << hits << std::endl;
     }
 };
 
@@ -275,4 +246,10 @@ void test_pages();
 void test_mem();
 
 void test_cache();
+
+///TODO: 1) page_ok, test_ok, mem_ok
+/// 2) debugging defines
+/// 3) cmd line parameters to launch program in different mods
+/// 4) introduce input system
+/// 5) fix makefile
 
