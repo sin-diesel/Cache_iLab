@@ -12,6 +12,17 @@
 #define Kin 0.25
 #define Kout 0.5
 
+
+struct input_t {
+    unsigned buffer_size_;
+    unsigned n_tests_;
+
+    input_t(unsigned buffer_size, unsigned n_tests) {
+        buffer_size_ = buffer_size;
+        n_tests_ = n_tests;
+    }
+};
+
 template<typename data_t>
 struct page_t {
 
@@ -77,6 +88,7 @@ struct cache_mem_t { // cache mem structure for easier interpretation of am and 
     void print_mem() const {
         std::cerr << "Printing memory: " << this << std::endl;
         std::cerr << "Memory size: " << mem_size_ << std::endl;
+        std::cerr << "Memory current size: " << mem_size_ << std::endl;
         for (auto v : list_) {
             v.print_page();
         }
@@ -87,12 +99,14 @@ struct cache_mem_t { // cache mem structure for easier interpretation of am and 
         list_.push_front(page);
         hash_table.insert({page.id_, &page});
         beginning_ = &list_.front();
-        cur_size_ += 1;
 
+        
         elem_t* deleted = &list_.back();
         hash_table.erase(deleted->id_);
         list_.pop_back();
         end_ = &list_.back();
+
+        cur_size_++;
 
     }
 
@@ -100,7 +114,7 @@ struct cache_mem_t { // cache mem structure for easier interpretation of am and 
         hash_table.erase(page.id_);
         list_.remove(page);  // actually I do not want to remove page completely, I want to leave the space that it was occupying (buffer has fixed sized and we do not want to change it)
         list_.push_back(elem_t());
-        cur_size_ -= 1;
+        cur_size_--;
     }
 
     bool page_at(int id) const {
@@ -132,7 +146,13 @@ struct cache_t {
 
     cache_t(unsigned n_pages): am(), a1(), aout() {
         unsigned aout_size = Kout * n_pages * (sizeof(page_t<data_t>) / sizeof(page_t<data_t>*));
+        if (aout_size == 0) {
+            aout_size = 1;
+        }
         unsigned a1_size = Kin * (n_pages - aout_size);
+        if (a1_size == 0) {
+            a1_size = 1;
+        }
         unsigned am_size = n_pages - aout_size - a1_size;
 
         am = cache_mem_t<page_t<data_t>>(am_size);
@@ -164,10 +184,10 @@ struct cache_t {
             aout.add_page(tail); // do not use list
             a1.remove_page(tail);
 
-            if (aout.cur_size_ == aout.mem_size_) {
-                page_t<data_t> tail = aout.list_.back();
-                aout.remove_page(tail);
-            }
+            // if (aout.cur_size_ == aout.mem_size_) {
+            //     page_t<data_t> tail = aout.list_.back();
+            //     aout.remove_page(tail);
+            // }
             a1.add_page(page); 
         } else {
             page_t<data_t> tail = am.list_.back();
@@ -184,6 +204,7 @@ struct cache_t {
             return 1; // hit
         } else if (aout.page_at(page.id_)) {
             reclaimfor(page); // deciding where to put the page
+            aout.remove_page(page);
             return 0; // miss
         } else if (a1.page_at(page.id_)) {
             return 1; // hit
@@ -246,6 +267,8 @@ void test_pages();
 void test_mem();
 
 void test_cache();
+
+void acquire_input();
 
 ///TODO: 1) page_ok, test_ok, mem_ok
 /// 2) debugging defines
