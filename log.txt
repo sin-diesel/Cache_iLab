@@ -1,0 +1,1719 @@
+<<<<<<<ENTERING PAGES UNIT TEST>>>>>>>
+Printing pages:
+
+
+Page ID: 0 Page size: 4 Page data 4
+Page ID: 1 Page size: 4 Page data 2
+Page ID: 2 Page size: 4 Page data 7
+Page ID: 3 Page size: 4 Page data 20
+Page ID: 4 Page size: 4 Page data 18
+<<<<<<PAGES_OK>>>>>>
+
+
+
+<<<<<<<ENTERING MEMORY UNIT TEST>>>>>>>
+Printing test mem: 
+
+
+Printing memory: 0x7ffee2c885d0
+Memory size: 4
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Printing memory: 0x7ffee2c885d0
+Memory size: 4
+Page ID: 2 Page size: 4 Page data 7
+Page ID: 1 Page size: 4 Page data 2
+Page ID: 0 Page size: 4 Page data 4
+Page ID: 0 Page size: 0 Page data 0
+<<<<<<MEMORY_OK>>>>>>
+
+
+
+<<<<<<<ENTERING CACHE UNIT TEST>>>>>>>
+
+
+
+Printing 2q cache at: 0x7ffee2c88568
+	printing am memory: 
+Printing memory: 0x7ffee2c88568
+Memory size: 4
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c885c0
+Memory size: 1
+Page ID: 0 Page size: 0 Page data 0
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88618
+Memory size: 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c88568 printed.
+
+
+
+
+
+Printing 2q cache at: 0x7ffee2c88568
+	printing am memory: 
+Printing memory: 0x7ffee2c88568
+Memory size: 4
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c885c0
+Memory size: 1
+Page ID: 0 Page size: 0 Page data 0
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88618
+Memory size: 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c88568 printed.
+
+
+
+
+
+Printing 2q cache at: 0x7ffee2c88568
+	printing am memory: 
+Printing memory: 0x7ffee2c88568
+Memory size: 4
+Page ID: 9 Page size: 4 Page data 4
+Page ID: 6 Page size: 4 Page data 8
+Page ID: 5 Page size: 4 Page data 4
+Page ID: 4 Page size: 4 Page data 2
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c885c0
+Memory size: 1
+Page ID: 0 Page size: 0 Page data 0
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88618
+Memory size: 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c88568 printed.
+
+
+
+
+
+Printing 2q cache at: 0x7ffee2c88568
+	printing am memory: 
+Printing memory: 0x7ffee2c88568
+Memory size: 4
+Page ID: 9 Page size: 4 Page data 4
+Page ID: 6 Page size: 4 Page data 8
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c885c0
+Memory size: 1
+Page ID: 0 Page size: 0 Page data 0
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88618
+Memory size: 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c88568 printed.
+
+
+
+
+
+Printing 2q cache at: 0x7ffee2c88568
+	printing am memory: 
+Printing memory: 0x7ffee2c88568
+Memory size: 4
+Page ID: 9 Page size: 4 Page data 4
+Page ID: 6 Page size: 4 Page data 8
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c885c0
+Memory size: 1
+Page ID: 5 Page size: 4 Page data 4
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88618
+Memory size: 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c88568 printed.
+
+
+
+
+
+Printing 2q cache at: 0x7ffee2c88278
+	printing am memory: 
+Printing memory: 0x7ffee2c88278
+Memory size: 6
+Page ID: 3 Page size: 4 Page data 9
+Page ID: 2 Page size: 4 Page data 6
+Page ID: 1 Page size: 4 Page data 3
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c882d0
+Memory size: 2
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88328
+Memory size: 7
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c88278 printed.
+
+
+Now generating data for cache and printing it: 
+Printing test data: 
+Number of pages: 40
+Printing generated pages: 
+
+Page ID: 2 Page size: 4 Page data 5
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 79 Page size: 4 Page data 94
+Page ID: 23 Page size: 4 Page data 75
+Page ID: 41 Page size: 4 Page data 68
+Page ID: 42 Page size: 4 Page data 24
+Page ID: 57 Page size: 4 Page data 7
+Page ID: 79 Page size: 4 Page data 36
+Page ID: 57 Page size: 4 Page data 61
+Page ID: 78 Page size: 4 Page data 6
+Page ID: 91 Page size: 4 Page data 74
+Page ID: 83 Page size: 4 Page data 69
+Page ID: 9 Page size: 4 Page data 99
+Page ID: 12 Page size: 4 Page data 44
+Page ID: 14 Page size: 4 Page data 47
+Page ID: 46 Page size: 4 Page data 91
+Page ID: 65 Page size: 4 Page data 88
+Page ID: 53 Page size: 4 Page data 80
+Page ID: 83 Page size: 4 Page data 10
+Page ID: 39 Page size: 4 Page data 22
+Page ID: 91 Page size: 4 Page data 82
+Page ID: 47 Page size: 4 Page data 8
+Page ID: 58 Page size: 4 Page data 58
+Page ID: 82 Page size: 4 Page data 95
+Page ID: 49 Page size: 4 Page data 91
+Page ID: 32 Page size: 4 Page data 95
+Page ID: 29 Page size: 4 Page data 28
+Page ID: 91 Page size: 4 Page data 87
+Page ID: 37 Page size: 4 Page data 66
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 41 Page size: 4 Page data 67
+Page ID: 62 Page size: 4 Page data 82
+Page ID: 40 Page size: 4 Page data 17
+Page ID: 41 Page size: 4 Page data 79
+Page ID: 42 Page size: 4 Page data 72
+Page ID: 13 Page size: 4 Page data 92
+Page ID: 93 Page size: 4 Page data 22
+Page ID: 66 Page size: 4 Page data 98
+After filling with data: 
+
+
+
+Printing 2q cache at: 0x7ffee2c88278
+	printing am memory: 
+Printing memory: 0x7ffee2c88278
+Memory size: 6
+Page ID: 66 Page size: 4 Page data 98
+Page ID: 93 Page size: 4 Page data 22
+Page ID: 13 Page size: 4 Page data 92
+Page ID: 42 Page size: 4 Page data 72
+Page ID: 41 Page size: 4 Page data 79
+Page ID: 40 Page size: 4 Page data 17
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c882d0
+Memory size: 2
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88328
+Memory size: 7
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c88278 printed.
+
+
+Creating 2q cache with double data type
+Printing test data: 
+Number of pages: 100
+Printing generated pages: 
+
+Page ID: 2 Page size: 8 Page data 5
+Page ID: 82 Page size: 8 Page data 45
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 25 Page size: 8 Page data 54
+Page ID: 79 Page size: 8 Page data 94
+Page ID: 23 Page size: 8 Page data 75
+Page ID: 41 Page size: 8 Page data 68
+Page ID: 42 Page size: 8 Page data 24
+Page ID: 57 Page size: 8 Page data 7
+Page ID: 79 Page size: 8 Page data 36
+Page ID: 57 Page size: 8 Page data 61
+Page ID: 78 Page size: 8 Page data 6
+Page ID: 91 Page size: 8 Page data 74
+Page ID: 83 Page size: 8 Page data 69
+Page ID: 9 Page size: 8 Page data 99
+Page ID: 12 Page size: 8 Page data 44
+Page ID: 14 Page size: 8 Page data 47
+Page ID: 46 Page size: 8 Page data 91
+Page ID: 65 Page size: 8 Page data 88
+Page ID: 53 Page size: 8 Page data 80
+Page ID: 83 Page size: 8 Page data 10
+Page ID: 39 Page size: 8 Page data 22
+Page ID: 91 Page size: 8 Page data 82
+Page ID: 47 Page size: 8 Page data 8
+Page ID: 58 Page size: 8 Page data 58
+Page ID: 82 Page size: 8 Page data 95
+Page ID: 49 Page size: 8 Page data 91
+Page ID: 32 Page size: 8 Page data 95
+Page ID: 29 Page size: 8 Page data 28
+Page ID: 91 Page size: 8 Page data 87
+Page ID: 37 Page size: 8 Page data 66
+Page ID: 82 Page size: 8 Page data 71
+Page ID: 41 Page size: 8 Page data 67
+Page ID: 62 Page size: 8 Page data 82
+Page ID: 40 Page size: 8 Page data 17
+Page ID: 41 Page size: 8 Page data 79
+Page ID: 42 Page size: 8 Page data 72
+Page ID: 13 Page size: 8 Page data 92
+Page ID: 93 Page size: 8 Page data 22
+Page ID: 66 Page size: 8 Page data 98
+Page ID: 60 Page size: 8 Page data 99
+Page ID: 77 Page size: 8 Page data 34
+Page ID: 19 Page size: 8 Page data 45
+Page ID: 24 Page size: 8 Page data 81
+Page ID: 50 Page size: 8 Page data 93
+Page ID: 26 Page size: 8 Page data 52
+Page ID: 40 Page size: 8 Page data 43
+Page ID: 40 Page size: 8 Page data 17
+Page ID: 0 Page size: 8 Page data 99
+Page ID: 29 Page size: 8 Page data 35
+Page ID: 47 Page size: 8 Page data 52
+Page ID: 83 Page size: 8 Page data 58
+Page ID: 69 Page size: 8 Page data 68
+Page ID: 69 Page size: 8 Page data 87
+Page ID: 42 Page size: 8 Page data 23
+Page ID: 42 Page size: 8 Page data 95
+Page ID: 21 Page size: 8 Page data 37
+Page ID: 53 Page size: 8 Page data 58
+Page ID: 94 Page size: 8 Page data 14
+Page ID: 97 Page size: 8 Page data 58
+Page ID: 11 Page size: 8 Page data 50
+Page ID: 11 Page size: 8 Page data 92
+Page ID: 97 Page size: 8 Page data 63
+Page ID: 16 Page size: 8 Page data 5
+Page ID: 81 Page size: 8 Page data 82
+Page ID: 70 Page size: 8 Page data 73
+Page ID: 77 Page size: 8 Page data 78
+Page ID: 85 Page size: 8 Page data 68
+Page ID: 43 Page size: 8 Page data 75
+Page ID: 92 Page size: 8 Page data 15
+Page ID: 35 Page size: 8 Page data 75
+Page ID: 60 Page size: 8 Page data 3
+Page ID: 67 Page size: 8 Page data 28
+Page ID: 8 Page size: 8 Page data 99
+Page ID: 84 Page size: 8 Page data 83
+Page ID: 36 Page size: 8 Page data 67
+Page ID: 7 Page size: 8 Page data 2
+Page ID: 25 Page size: 8 Page data 77
+Page ID: 92 Page size: 8 Page data 43
+Page ID: 40 Page size: 8 Page data 86
+Page ID: 19 Page size: 8 Page data 38
+Page ID: 51 Page size: 8 Page data 63
+Page ID: 6 Page size: 8 Page data 34
+Page ID: 27 Page size: 8 Page data 19
+Page ID: 82 Page size: 8 Page data 89
+Page ID: 63 Page size: 8 Page data 26
+Page ID: 14 Page size: 8 Page data 19
+Page ID: 12 Page size: 8 Page data 49
+Page ID: 30 Page size: 8 Page data 16
+Page ID: 78 Page size: 8 Page data 1
+Page ID: 8 Page size: 8 Page data 61
+Page ID: 2 Page size: 8 Page data 91
+Page ID: 86 Page size: 8 Page data 19
+Page ID: 49 Page size: 8 Page data 21
+Page ID: 20 Page size: 8 Page data 88
+Page ID: 16 Page size: 8 Page data 93
+Page ID: 7 Page size: 8 Page data 85
+Page ID: 87 Page size: 8 Page data 83
+Page ID: 12 Page size: 8 Page data 40
+Page ID: 77 Page size: 8 Page data 6
+
+
+
+Printing 2q cache at: 0x7ffee2c88130
+	printing am memory: 
+Printing memory: 0x7ffee2c88130
+Memory size: 0
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88188
+Memory size: 0
+	 printing aout memory: 
+Printing memory: 0x7ffee2c881e0
+Memory size: 20
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c88130 printed.
+
+
+<<<<<<CACHE_OK>>>>>>
+
+
+
+Accessing page with id: 2
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 2 Page size: 4 Page data 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 0 Page size: 0 Page data 0
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 82
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 0 Page size: 0 Page data 0
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 81
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+Page ID: 0 Page size: 0 Page data 0
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 0 Page size: 0 Page data 0
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 25
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 0 Page size: 0 Page data 0
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 79
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 79 Page size: 4 Page data 94
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 23
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 23 Page size: 4 Page data 75
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 79 Page size: 4 Page data 94
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 41
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 41 Page size: 4 Page data 68
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 23 Page size: 4 Page data 75
+Page ID: 79 Page size: 4 Page data 94
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 42
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 42 Page size: 4 Page data 24
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 41 Page size: 4 Page data 68
+Page ID: 23 Page size: 4 Page data 75
+Page ID: 79 Page size: 4 Page data 94
+Page ID: 0 Page size: 0 Page data 0
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 57
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 57 Page size: 4 Page data 7
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 42 Page size: 4 Page data 24
+Page ID: 41 Page size: 4 Page data 68
+Page ID: 23 Page size: 4 Page data 75
+Page ID: 79 Page size: 4 Page data 94
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 79
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 79 Page size: 4 Page data 36
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 57 Page size: 4 Page data 7
+Page ID: 42 Page size: 4 Page data 24
+Page ID: 41 Page size: 4 Page data 68
+Page ID: 23 Page size: 4 Page data 75
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 57
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 57 Page size: 4 Page data 61
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 79 Page size: 4 Page data 36
+Page ID: 57 Page size: 4 Page data 7
+Page ID: 42 Page size: 4 Page data 24
+Page ID: 41 Page size: 4 Page data 68
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 78
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 78 Page size: 4 Page data 6
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 57 Page size: 4 Page data 61
+Page ID: 79 Page size: 4 Page data 36
+Page ID: 57 Page size: 4 Page data 7
+Page ID: 42 Page size: 4 Page data 24
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 91
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 91 Page size: 4 Page data 74
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 78 Page size: 4 Page data 6
+Page ID: 57 Page size: 4 Page data 61
+Page ID: 79 Page size: 4 Page data 36
+Page ID: 57 Page size: 4 Page data 7
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 83
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 83 Page size: 4 Page data 69
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 91 Page size: 4 Page data 74
+Page ID: 78 Page size: 4 Page data 6
+Page ID: 79 Page size: 4 Page data 36
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 9
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 9 Page size: 4 Page data 99
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 83 Page size: 4 Page data 69
+Page ID: 91 Page size: 4 Page data 74
+Page ID: 78 Page size: 4 Page data 6
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 12
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 12 Page size: 4 Page data 44
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 9 Page size: 4 Page data 99
+Page ID: 83 Page size: 4 Page data 69
+Page ID: 91 Page size: 4 Page data 74
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 14
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 14 Page size: 4 Page data 47
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 12 Page size: 4 Page data 44
+Page ID: 9 Page size: 4 Page data 99
+Page ID: 83 Page size: 4 Page data 69
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 46
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 46 Page size: 4 Page data 91
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 14 Page size: 4 Page data 47
+Page ID: 12 Page size: 4 Page data 44
+Page ID: 9 Page size: 4 Page data 99
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 65
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 65 Page size: 4 Page data 88
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 46 Page size: 4 Page data 91
+Page ID: 14 Page size: 4 Page data 47
+Page ID: 12 Page size: 4 Page data 44
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 53
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 53 Page size: 4 Page data 80
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 65 Page size: 4 Page data 88
+Page ID: 46 Page size: 4 Page data 91
+Page ID: 14 Page size: 4 Page data 47
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 83
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 83 Page size: 4 Page data 10
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 53 Page size: 4 Page data 80
+Page ID: 65 Page size: 4 Page data 88
+Page ID: 46 Page size: 4 Page data 91
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 39
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 39 Page size: 4 Page data 22
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 83 Page size: 4 Page data 10
+Page ID: 53 Page size: 4 Page data 80
+Page ID: 65 Page size: 4 Page data 88
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 91
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 91 Page size: 4 Page data 82
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 39 Page size: 4 Page data 22
+Page ID: 83 Page size: 4 Page data 10
+Page ID: 53 Page size: 4 Page data 80
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 47
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 47 Page size: 4 Page data 8
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 91 Page size: 4 Page data 82
+Page ID: 39 Page size: 4 Page data 22
+Page ID: 83 Page size: 4 Page data 10
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 58
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 82 Page size: 4 Page data 45
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 58 Page size: 4 Page data 58
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 47 Page size: 4 Page data 8
+Page ID: 91 Page size: 4 Page data 82
+Page ID: 39 Page size: 4 Page data 22
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 82
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 95
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 58 Page size: 4 Page data 58
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 47 Page size: 4 Page data 8
+Page ID: 91 Page size: 4 Page data 82
+Page ID: 39 Page size: 4 Page data 22
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 49
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 95
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 49 Page size: 4 Page data 91
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 58 Page size: 4 Page data 58
+Page ID: 47 Page size: 4 Page data 8
+Page ID: 91 Page size: 4 Page data 82
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 32
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 95
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 32 Page size: 4 Page data 95
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 49 Page size: 4 Page data 91
+Page ID: 58 Page size: 4 Page data 58
+Page ID: 47 Page size: 4 Page data 8
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 29
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 95
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 29 Page size: 4 Page data 28
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 32 Page size: 4 Page data 95
+Page ID: 49 Page size: 4 Page data 91
+Page ID: 58 Page size: 4 Page data 58
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 91
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 95
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 91 Page size: 4 Page data 87
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 29 Page size: 4 Page data 28
+Page ID: 32 Page size: 4 Page data 95
+Page ID: 49 Page size: 4 Page data 91
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 37
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 95
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 37 Page size: 4 Page data 66
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 91 Page size: 4 Page data 87
+Page ID: 29 Page size: 4 Page data 28
+Page ID: 32 Page size: 4 Page data 95
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 82
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 37 Page size: 4 Page data 66
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 91 Page size: 4 Page data 87
+Page ID: 29 Page size: 4 Page data 28
+Page ID: 32 Page size: 4 Page data 95
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 41
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 41 Page size: 4 Page data 67
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 37 Page size: 4 Page data 66
+Page ID: 91 Page size: 4 Page data 87
+Page ID: 29 Page size: 4 Page data 28
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 62
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 62 Page size: 4 Page data 82
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 41 Page size: 4 Page data 67
+Page ID: 37 Page size: 4 Page data 66
+Page ID: 91 Page size: 4 Page data 87
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 40
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 40 Page size: 4 Page data 17
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 62 Page size: 4 Page data 82
+Page ID: 41 Page size: 4 Page data 67
+Page ID: 37 Page size: 4 Page data 66
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 41
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 41 Page size: 4 Page data 79
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 40 Page size: 4 Page data 17
+Page ID: 62 Page size: 4 Page data 82
+Page ID: 41 Page size: 4 Page data 67
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 42
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 42 Page size: 4 Page data 72
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 40 Page size: 4 Page data 17
+Page ID: 62 Page size: 4 Page data 82
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 13
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 13 Page size: 4 Page data 92
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 42 Page size: 4 Page data 72
+Page ID: 40 Page size: 4 Page data 17
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 93
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 93 Page size: 4 Page data 22
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 13 Page size: 4 Page data 92
+Page ID: 42 Page size: 4 Page data 72
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 66
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 66 Page size: 4 Page data 98
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 93 Page size: 4 Page data 22
+Page ID: 13 Page size: 4 Page data 92
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 60
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 60 Page size: 4 Page data 99
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 66 Page size: 4 Page data 98
+Page ID: 93 Page size: 4 Page data 22
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 77
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 77 Page size: 4 Page data 34
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 60 Page size: 4 Page data 99
+Page ID: 66 Page size: 4 Page data 98
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 19
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 19 Page size: 4 Page data 45
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 77 Page size: 4 Page data 34
+Page ID: 60 Page size: 4 Page data 99
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 24
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 24 Page size: 4 Page data 81
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 19 Page size: 4 Page data 45
+Page ID: 77 Page size: 4 Page data 34
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 50
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 50 Page size: 4 Page data 93
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 24 Page size: 4 Page data 81
+Page ID: 19 Page size: 4 Page data 45
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 26
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 26 Page size: 4 Page data 52
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 50 Page size: 4 Page data 93
+Page ID: 24 Page size: 4 Page data 81
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 40
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 40 Page size: 4 Page data 43
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 26 Page size: 4 Page data 52
+Page ID: 50 Page size: 4 Page data 93
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 40
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 40 Page size: 4 Page data 43
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 26 Page size: 4 Page data 52
+Page ID: 50 Page size: 4 Page data 93
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 0
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 0 Page size: 4 Page data 99
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 40 Page size: 4 Page data 43
+Page ID: 26 Page size: 4 Page data 52
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Accessing page with id: 29
+
+
+
+Printing 2q cache at: 0x7ffee2c886c0
+	printing am memory: 
+Printing memory: 0x7ffee2c886c0
+Memory size: 4
+Page ID: 82 Page size: 4 Page data 71
+Page ID: 25 Page size: 4 Page data 54
+Page ID: 81 Page size: 0 Page data 0
+Page ID: 2 Page size: 4 Page data 5
+	 printing a1 memory: 
+Printing memory: 0x7ffee2c88718
+Memory size: 1
+Page ID: 29 Page size: 4 Page data 35
+	 printing aout memory: 
+Printing memory: 0x7ffee2c88770
+Memory size: 5
+Page ID: 0 Page size: 4 Page data 99
+Page ID: 40 Page size: 4 Page data 43
+Page ID: 0 Page size: 0 Page data 0
+Cache 0x7ffee2c886c0 printed.
+
+
+Hits: 3
