@@ -4,18 +4,21 @@
     
 
 typedef int data_type;
+#define DEBUG false
 
 
 void acquire_input() {
 
     int buffer_size = 0;
+    std::cout << "Enter buffer size:" << std::endl;
     std::cin >> buffer_size;
-    std::cout << "Buffer size entered: " << buffer_size << std::endl;
+    DUB(std::cout << "Buffer size entered: " << buffer_size << std::endl;)
     assert(buffer_size > 0);
 
     int n_tests = 0;
+    std::cout << "Enter number of tests:" << std::endl;
     std::cin >> n_tests;
-    std::cout << "Number of tests: " << n_tests << std::endl;
+    DUB(std::cout << "Number of tests: " << n_tests << std::endl;)
     assert(n_tests > 0);
 
     cache_t<data_type> two_q_cache(buffer_size);
@@ -24,11 +27,10 @@ void acquire_input() {
     for (int i = 0; i < n_tests; ++i) {
         int id = 0;
         std::cin >> id;
-        
-        std::cout << "Accessing page with id " << id << " and unknown data ";
+        DUB(std::cout << "Accessing page with id " << id << " and unknown data ";)
         page_t<data_type> new_page = page_t<data_type>(id, 0);
         hits += two_q_cache.handle_page(new_page);
-        two_q_cache.print_cache();
+        DUB(two_q_cache.print_cache();)
     }
 
     std::cout << "Hits: " << hits << std::endl;

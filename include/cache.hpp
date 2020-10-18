@@ -5,12 +5,12 @@
 #include <vector>
 #include <assert.h>
 
-#define DEBUG true
+//#define DEBUG true
 
 #define DUB(a) if (DEBUG) {a}  
 
 #define Kin 0.25
-#define Kout 0.5
+#define Kout 0.3
 
 
 struct input_t {
@@ -153,7 +153,7 @@ struct cache_t {
         if (a1_size == 0) {
             a1_size = 1;
         }
-        unsigned am_size = n_pages - aout_size - a1_size;
+        unsigned am_size = n_pages - aout_size - a1_size > 0 ? n_pages - aout_size - a1_size : 1;
 
         am = cache_mem_t<page_t<data_t>>(am_size);
         a1 = cache_mem_t<page_t<data_t>>(a1_size);

@@ -4,8 +4,8 @@
 
 int main(int argc, char* argv[]) {
 
-    test_pages();
-    test_mem();
+    //test_pages();
+    //test_mem();
     // test_cache();
 
     acquire_input();
